@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="#4B57C7">
+	<meta name="keywords" content="css,generator,css generator,flex generator,css flex generator,генератор стилей,css генератор,css flex генератор,flexbox">
+	<meta name="description" content="Сервис для генерации CSS FlexBox и изучения этой технологии">
+	<meta name="author" content="Vito Scaleta">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Flex Generator</title>
+	<link rel="shortcut icon" href="icon.png" type="image/png">
+	<link rel="stylesheet" href="min.css">
+</head>
+<body class="scroll" id="body">	
+
+		<div id="flex_elements" class="scroll">
+
+			<div class="rows">
+				<ul class="flex_row">
+					<li class="items">
+						<h1>Elements</h1>
+					</li>					
+					<li class="items others">
+						<label>
+							<input type="text" placeholder="100px">
+							<p>min-width</p>
+						</label>
+					</li>
+					<li class="items others">
+						<label>
+							<input type="text" placeholder="100px">
+							<p>min-height</p>
+						</label>
+					</li>
+					<li class="items others tr">
+						<label>
+							<input type="text" placeholder="5px">
+							<p>margin</p>
+						</label>
+					</li>
+					<li class="items others tr">
+						<label>
+							<input type="text" placeholder="30px 0 0 0">
+							<p>padding</p>
+						</label>
+					</li>
+					<li class="items others tr">
+						<label>
+							<input type="text" placeholder="nums">
+							<p>the note</p>
+						</label>
+					</li>
+					<li class="items others trvs">	
+						<label>
+							<input type="text" placeholder="10">					
+							<p>quantity</p>
+						</label>
+					</li>
+					<li class="items loadergenb" id="genb">
+						<div></div>
+					</li>
+					<li class="items posa"></li>
+				</ul>
+			</div>
+		
+			<div class="rows">
+				<ul class="flex_row">
+					<li class="items">
+						<h1>display</h1>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>flex</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>inline-flex</p>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="rows">
+				<ul class="flex_row">
+					<li class="items">
+						<h1>flex-direction</h1>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>column</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>column-reverse</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>row</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>row-reverse</p>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="rows">
+				<ul class="flex_row">
+					<li class="items">
+						<h1>justify-content</h1>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>center</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>flex-start</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>flex-end</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>space-around</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>space-between</p>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="rows">
+				<ul class="flex_row">
+					<li class="items">
+						<h1>align-content</h1>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>center</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>flex-start</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>flex-end</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>space-around</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>space-between</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>stretch</p>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="rows">
+				<ul class="flex_row">
+					<li class="items">
+						<h1>align-items</h1>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>center</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>flex-start</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>flex-end</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>baseline</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>stretch</p>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="rows">
+				<ul class="flex_row">
+					<li class="items">
+						<h1>flex-wrap</h1>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>nowrap</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>wrap</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>wrap-reverse</p>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="rows">
+				<ul class="flex_row">
+					<li class="items">
+						<h1>flex-basis</h1>
+					</li>
+					<li class="items">
+						<label>
+							<input type="number" placeholder="auto" class="to_flex">
+						</label>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="rows">
+				<ul class="flex_row">
+					<li class="items">
+						<h1>flex-grow</h1>
+					</li>
+					<li class="items">
+						<label>
+							<input type="number" placeholder="0" class="to_flex">
+						</label>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="rows">
+				<ul class="flex_row">
+					<li class="items">
+						<h1>flex-shrink</h1>
+					</li>
+					<li class="items">
+						<label>
+							<input type="number" placeholder="1" class="to_flex">
+						</label>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="rows">
+				<ul class="flex_row">
+					<li class="items">
+						<h1>align-self</h1>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>center</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>flex-start</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>flex-end</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>baseline</p>
+					</li>
+					<li class="items ch_i">
+						<div class="checkbox"></div>
+						<p>stretch</p>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="rows">
+				<ul class="flex_row">
+					<li class="items">
+						<h1>order</h1>
+					</li>
+					<li class="items">
+						<label>
+							<input type="text" placeholder="0" class="to_flex">
+						</label>
+					</li>
+				</ul>
+			</div>
+		
+		</div>
+		
+		<div id="preview_content">
+			<div class="scroll">
+				<div id="flex_demo">
+
+				</div>
+				<h1 id="ph">PREVIEW</h1>
+			</div>
+		</div>
+		
+		<div id="preview_css_container" title="CSS Правила для Flex-родителя, содержащих Flex-элементы" data-en="CSS Rules for Flex-Parent containing Flex-Elements">
+			<div>
+				<h1>Flex-Container</h1>
+				<div class="scroll pre"></div>
+			</div>
+		</div>
+		
+		<div id="preview_css_items" title="CSS Правила для Flex-элементов, находящихся внутри Flex-родителя" data-en="CSS Rules for Flex-Elements Inside a Flex-Parent">
+			<div>
+				<h1>Flex-Items</h1>
+				<div class="scroll pre"></div>
+			</div>
+		</div>
+
+	<script src="sc.js"></script>
+</body>
+</html>
